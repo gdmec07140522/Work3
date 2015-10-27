@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="false">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="标准身高体重计算器"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal|top"
+                android:textStyle="bold"
+                android:textColorLink="#f524ff"
+                android:textColor="#0d87ff" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="332dp"
+                android:layout_gravity="center_vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请选择你的性别："
+                        android:id="@+id/textView3"
+                        android:textSize="40px"
+                        android:textStyle="bold"
+                        android:textColor="#13ff14" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="男"
+                            android:id="@+id/man"
+                            android:textStyle="bold"
+                            android:textSize="40px"
+                            android:textColor="#0baaff" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="女"
+                            android:id="@+id/woman"
+                            android:textSize="40px"
+                            android:textColor="#ff461f" />
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:text="运算"
+                        android:id="@+id/button"
+                        android:textSize="50px"
+                        android:layout_gravity="top"
+                        android:background="#30f5ff"
+                        android:textColor="#c01eff" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="119dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView5"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#77d2ff" />
+                </TableRow>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="431dp"
+                android:layout_gravity="left|center_vertical"
+                android:touchscreenBlocksFocus="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请输入体重："
+                    android:id="@+id/textView2"
+                    android:textSize="40px"
+                    android:textStyle="bold"
+                    android:textColor="#29ff10" />
+
+                <EditText
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText"
+                    android:textColor="#ff1213" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kg"
+                    android:id="@+id/textView4"
+                    android:textSize="40px"
+                    android:textColor="#0eff39" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
